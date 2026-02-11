@@ -101,3 +101,13 @@ header{
     text-decoration: underline;
     text-shadow: 0 0 5px var(--text);
 }
+
+#taskForm{
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    
+    align-items: center;
+}
