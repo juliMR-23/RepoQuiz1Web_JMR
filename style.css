@@ -7,32 +7,97 @@
     --color0: color-mix(in srgb, var(--color4) 15%, var(--color1));
 
     --bg: linear-gradient(to right, var(--color1), var(--color0));
-    --card: #1f2833; 
+    --card: linear-gradient(to right, var(--color2), var(--color0)); 
     --text: #c5c6c7; 
     --muted: #6b7280; 
     --primary: #45a29e; 
     --danger: #dc2626; 
-    --ok: #16a34a; 
+    --ok: #66fcf1; 
     --space: 16px; 
     --radius: 12px; 
 
 }
 
 
+footer{
+    position: fixed;
+    bottom: 0;
+    padding:.5rem;
+    width: 100%;
+    background-color: var(--color1);
+}
+
 body{
     font-family:"Poppins", sans-serif;
-    background: linear-gradient(to right, var(--color1), var(--color0));
+    background: var(--bg);
     color: var(--text);
 }
 h1{
     color: var(--primary);
 }
+ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-right: 3rem;
+    gap: .8rem;
+}
 
-.card{
-
+li{
+    list-style-type: none;
+    padding: .6rem .3rem .6rem .3rem;
+    font-weight: 7000;
+    background: var(--card);
+    border-radius: var(--radius);
+    letter-spacing: 1px;
+    text-align: center;
+}
+li:hover{
+    box-shadow: 0 0 10px var(--primary);
 }
 
 .hero{
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: .5rem;
+    padding-left: 2rem;
 }
 
+button{
+    background-color: var(--primary);
+    color: var(--text);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: var(--radius);
+    border-style: hidden;
+    width:6rem;
+    height: 2rem;
+    margin: .5rem;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: var(--ok);
+    color: var(--color1);
+    box-shadow: 0 0 10px var(--ok);
+    cursor: pointer;   
+}
+
+header{
+    display: flex;
+    padding: .2rem;
+    align-content: flex-end;
+}
+
+.brand{
+    margin-left: auto;
+    color: var(--text);
+    text-decoration: none;
+}
+.brand:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 5px var(--text);
+}
