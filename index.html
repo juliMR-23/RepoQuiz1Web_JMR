@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Ingeniería Web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <section>
+            <header>
+                <a href="#" class="brand">
+                    <span class="brand__name">Mini To-Do</span>
+                </a>
+            </header>
+
+            <main>
+                <section class="hero">
+                    <h1>EXAMEN WEB 1.2</h1>
+                    <p>To-Do list personalizada</p>
+                    <button id="btnFocus" type="button">Iniciar</button>
+                </section>
+
+                <section id="newTask" class="card">
+                    <form id="taskForm">
+                        <!-- <label for="taskInput">Nueva tarea</label> -->
+                        <input
+                        id="taskInput"
+                        minlength="3"
+                        required
+                        placeholder="Escribe una tarea"
+                        />
+                        <button type="submit" id="btnAdd">Agregar</button>
+                    </form>
+                </section>
+
+                <ul id="tasks">
+                </ul>
+                
+            </main>
+            <footer id="foot"></footer>
+        </section>
+
+        <script src="app.js"></script>
+
+    </body>
+
+</html>
