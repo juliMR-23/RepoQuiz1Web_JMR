@@ -1,0 +1,38 @@
+:root{
+    --color1:#0B0c10;
+    --color2:#1f2833;
+    --color3:#c5c6c7;
+    --color4:#66fcf1;
+    --color5:#45a29e;
+    --color0: color-mix(in srgb, var(--color4) 15%, var(--color1));
+
+    --bg: linear-gradient(to right, var(--color1), var(--color0));
+    --card: #1f2833; 
+    --text: #c5c6c7; 
+    --muted: #6b7280; 
+    --primary: #45a29e; 
+    --danger: #dc2626; 
+    --ok: #16a34a; 
+    --space: 16px; 
+    --radius: 12px; 
+
+}
+
+
+body{
+    font-family:"Poppins", sans-serif;
+    background: linear-gradient(to right, var(--color1), var(--color0));
+    color: var(--text);
+}
+h1{
+    color: var(--primary);
+}
+
+.card{
+
+}
+
+.hero{
+    margin-bottom: 2rem;
+}
+
