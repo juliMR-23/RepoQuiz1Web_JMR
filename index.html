@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quiz Ingeniería Web</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        
-        <section>
-            <header>
-                <a href="#" class="brand">
-                    <span class="brand__name">Mini To-Do</span>
-                </a>
-            </header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Ingeniería Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <main>
-                <section class="hero">
-                    <h1>EXAMEN WEB 1.2</h1>
-                    <p>To-Do list personalizada</p>
-                    <button id="btnFocus" type="button">Iniciar</button>
-                </section>
+<body>
 
-                <section id="newTask" class="card">
-                    <form id="taskForm">
-                        <!-- <label for="taskInput">Nueva tarea</label> -->
-                        <input
-                        id="taskInput"
-                        minlength="3"
-                        required
-                        placeholder="Escribe una tarea"
-                        />
-                        <button type="submit" id="btnAdd">Agregar</button>
-                    </form>
-                </section>
+    <header>
+        <a href="#" class="brand">
+            <span>Mini To-Do</span>
+        </a>
+    </header>
 
-                <ul id="tasks">
-                </ul>
-                
-            </main>
-            <footer id="foot"></footer>
+    <main>
+        <section class="hero">
+            <h1>EXAMEN WEB 1.2</h1>
+            <p>To-Do list personalizado</p>
+            <button id="btnFocus" type="button">Iniciar</button>
         </section>
 
-        <script src="app.js"></script>
+        <section id="newTask">
+            <form id="taskForm">
+                <!-- <label for="taskInput">Nueva tarea</label> -->
+                <input id="taskInput" required placeholder="Escribe una tarea" />
+                <button type="submit" id="btnAdd">Agregar</button>
+            </form>
+        </section>
 
-    </body>
+        <ul id="tasks">
+        </ul>
+
+        <p id="count"></p>
+
+    </main>
+    <footer id="foot"></footer>
+
+
+    <script src="app.js"></script>
+
+</body>
 
 </html>
